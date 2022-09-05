@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+$color-primary: #FFFFFF;
+$color-secondary: #2E2E2E;
+// $color-secondary: #708090;
+$color-primary-text: #f5f4f0;
+$color-secondary-text: 	#71797E;
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F0F2F5;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+}

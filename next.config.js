@@ -1,7 +1,25 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+//   // swcMinify: true,
 
-module.exports = nextConfig
+//     images: {
+//       loader: "imgix",
+//       path: 'https://api.github.com',
+//     },
+// }
+
+// module.exports = nextConfig
+
+// module.exports = {
+//   images: {
+//     loader: 'cloudinary',
+//     path: 'https://github.com',
+//   },
+// }
+
+module.exports = {
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
+}

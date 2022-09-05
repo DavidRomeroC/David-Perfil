@@ -1,0 +1,231 @@
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "navbar navbar navbar"
+        "main__content main__content main__content"
+        "footer footer footer";
+
+    .navbar,
+    .main__content,
+    .footer {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        border-radius: 8px;
+    }
+
+    .navbar {
+        background-color: $color-secondary;
+        grid-area: navbar;
+        height: 100px;
+    }
+
+    .main__content {
+        background-color: $color-primary;
+        grid-area: main__content;
+        height: auto;
+        width: 100%;
+
+        .main__page-content {
+            height: auto;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: "exp__content exp__content skill__content"
+                "exp__content exp__content skill__content";
+
+            .exp__content {
+                grid-area: exp__content;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 10px 0 10px 0;
+                height: auto;
+                width: auto;
+
+                .photo__content {
+                    height: 100%;
+                    width: 160px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-top: 20px;
+
+                    img {
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+                    }
+
+                    .name__content {
+
+                        margin-top: 20px;
+
+                        p,
+                        h4 {
+                            margin: 0px;
+                            padding: 0px;
+                            border: 0px;
+                        }
+                    }
+
+                }
+
+                .description__content {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 60%;
+
+                    .description {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .skill__content {
+                grid-area: skill__content;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 0px 0 30px 30px;
+                width: 100%;
+
+                .skill {
+                    width: 80%;
+
+                    .progress__content {
+                        height: 20px;
+                        width: 100%;
+                        background-color: white;
+                        border-radius: 10px;
+                        border: 1px solid black;
+
+                        .progress {
+                            height: 20px;
+                            background-color: #2E2E2E;
+                            border-radius: 6px;
+                            margin: 0px;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: $color-primary;
+        grid-area: footer;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+
+        .navbar {
+            .home {
+                div {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .links__content {
+                div {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .main__content {
+
+            .main__page-content {
+
+                grid-template-areas: "exp__content exp__content exp__content"
+                    "skill__content skill__content skill__content";
+
+                .exp__content {
+                    flex-direction: column;
+
+                    .photo__content {
+                        flex-direction: row;
+                        align-items: center;
+                        width: 60%;
+
+                        .name__content {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .description__content {
+                        width: 90%;
+
+                        .description {
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+
+        .navbar {
+
+            .home {
+                div {
+                    font-size: 1rem;
+                }
+            }
+
+            .links__content {
+                div {
+                    font-size: 0.9375rem;
+                }
+            }
+        }
+
+        .main__content {
+
+            .main__page-content {
+
+                .exp__content {
+                    flex-direction: column;
+
+                    .photo__content {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 200px;
+                    }
+
+                    .description__content {
+                        .description {
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

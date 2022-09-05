@@ -1,0 +1,30 @@
+.content {
+    .main__content {
+
+        .github__page-content {
+            display: grid;
+            height: auto;
+            margin: 40px auto;
+            grid-gap: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, auto);
+            grid-template-areas: "github__content";
+
+
+            .github__content {
+                grid-area: github__content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .data__content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
