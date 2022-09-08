@@ -7,7 +7,7 @@ const ContactPage = () => (
         <div className="contact__page-content">
             <p>Para contrataciones contactate conmigo enviandome un correo a:</p>
             <Link href="mailto:romerocandelariodavid@gmail.com?Subject=Asunto%20del%20email">
-                <a target="_blank" >romerocandelariodavid@gmail.com</a>
+                <a>romerocandelariodavid@gmail.com</a>
             </Link>
         </div>
     </Layout>
