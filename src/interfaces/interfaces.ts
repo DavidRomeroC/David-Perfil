@@ -1,8 +1,11 @@
+
 export interface NavItems {
     href: string;
     name: string;
     image: string;
 }
+
+// interface github data
 
 export interface Data {
     user: UserData;

@@ -19,14 +19,14 @@ export const Navbar: FC = () => {
                 </div>
                 <div className="links__content">
                     {navItems.map(({ name, href, image }, index) => (
-                        <>
-                            <Link key={index} href={href} id={name} >
+                        <div key={index}>
+                            <Link href={href} >
                                 <div style={asPath === href ? styles : undefined} >
                                     <Image src={image} alt="icono" width={20} height={20} />
                                     <div>{name}</div>
                                 </div>
                             </Link>
-                        </>
+                        </div>
                     ))}
                 </div>
             </nav>

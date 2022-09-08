@@ -15,7 +15,7 @@ const GitHubPage: FC<Data> = ({ user }) => {
                         <h1>{name}</h1>
                         <Image src={avatar_url} alt="github" width={200} height={200} />
                         <p>{bio}</p>
-                        <a href={html_url}> Ir a mi repositorio de GitHub </a>
+                        <a href={html_url} target="_blank"> Ir a mi repositorio de GitHub </a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,28 @@
+.content {
+
+    .main__content {
+
+        .linkedin__page-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+
+            h3 {
+                font-size: 1.5em;
+                text-align: center
+            }
+
+            a {
+                font-size: 1.1em;
+                color: white;
+                background-color: #2E2E2E;
+                height: 40px;
+                padding: 5px 10px 5px 10px;
+                width: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+}
