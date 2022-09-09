@@ -7,7 +7,7 @@ export const navItems: NavItems[] = [
         image: "/phone.png",
     },
     {
-        href: "/linkedin",
+        href: "/milinkedin",
         name: "LinkedIn",
         image: "/linkedin.png",
     },
