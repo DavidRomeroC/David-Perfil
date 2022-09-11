@@ -10,7 +10,7 @@ const HomePage: NextPage = () => {
         <div className="main__page-content">
           <div className="exp__content">
             <div className="photo__content">
-              <Image src="/profile-photo.jpeg" alt='profile picture' width="250" height="350"/>
+              <Image placeholder='blur' blurDataURL="/profile-photo.jpeg" src="/profile-photo.jpeg" alt='profile picture' width="250" height="350"/>
               <div className='name__content'>
                 <h4>David Romero Candelario</h4>
                 <p>FrontEnd ReactJs Developer</p>

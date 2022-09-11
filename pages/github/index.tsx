@@ -13,7 +13,7 @@ const GitHubPage: FC<Data> = ({ user }) => {
                 <div className="github__content">
                     <div className="data__content">
                         <h1>{name}</h1>
-                        <Image src={avatar_url} alt="github" width={200} height={200} />
+                        <Image placeholder="blur" blurDataURL={avatar_url} src={avatar_url} alt="github" width={200} height={200} />
                         <p>{bio}</p>
                         <a href={html_url}> Ir a mi repositorio de GitHub </a>
                     </div>
